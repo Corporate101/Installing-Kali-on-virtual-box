@@ -34,7 +34,10 @@ Storage: Click on the empty CD symbol under Controller: IDE, then choose "Choose
 <img src="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Folder/Attach-an-ISO.jpg">
 
 <h2>Configure the Network</h2>
-Ensure that your network settings are configured appropriately. It's recommended to use Bridged Adapter network settings to 
+Ensure that your network settings are configured appropriately. It's recommended to use Bridged Adapter network settings as your VM acts like any other device on your physical network. It gets its own IP address directly from your network's DHCP server or can be statically configured, allowing it to interact with other devices on your network as if it were a physical machine. 
+
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Linux%20Network.png">
+
 <h2>Step 5:Start the VM</h2>
 Click on "Start" to boot the VM. After booting, you'll be prompted to log in. The default username and password for Linux is "kali"
 
