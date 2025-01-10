@@ -2,7 +2,7 @@
 <h2>Step 1: Download Kali Linux ISO</h2>
 <a href="https://www.kali.org/get-kali/#kali-virtual-machines">Click here</a> to Visit the Official Kali and download the latest version of Kali Linux ISO suitable for your system (32-bit or 64-bit). Generally, you'll want the 64-bit version if your system supports it.
 
-<img src="">
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Download%20Kali.png">
 
 <h2>Step 2: Create a New Virtual Machine</h2>
 At this stage, I believe you've already downloaded and installed virtual box, if not, I have create a <a href="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Creating%20Windows%20Virtual%20machine.md">guide here</a> on how to go about it.
@@ -10,9 +10,9 @@ Open VirtualBox and click on "New".
 
 <img src="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Folder/New.jpg">
 
-Name and Operating System: Name your VM (e.g., "Kali Linux") and select "Linux" as the Type, "Linux(64-bit)" as the Version if you're using the 64-bit ISO.
+Name and Operating System: Name your VM (e.g., "Kali Linux") and select "Linux" as the Type, "Ubuntu(64-bit)" as the Version if you're using the 64-bit ISO.
 
-<img src="">
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Name%20your%20OS.png">
 
 Memory Size: Allocate at least 4096 MB, but 8192 MB (8 GB) or more is recommended for smoother performance.
 
