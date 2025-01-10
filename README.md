@@ -1,9 +1,12 @@
 # Installing-Kali-on-virtual-box
 <h2>Step 1: Download Kali Linux ISO</h2>
-<a href="https://www.kali.org/get-kali/#kali-virtual-machines">Click here</a> to Visit the Official Kali and download the latest version of Kali Linux ISO suitable for your system (32-bit or 64-bit). Generally, you'll want the 64-bit version if your system supports it.
+<a href="https://www.kali.org/get-kali/#kali-virtual-machines">Click here</a> to Visit the Official Kali and download the latest version of Kali Linux ISO suitable for your system (32-bit or 64-bit). Generally, you'll want the 64-bit version if your system supports.
 
 <img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Download%20Kali.png">
 
+Extract the file.
+
+<img src="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Folder/Extract%20file.jpg">
 <h2>Step 2: Create a New Virtual Machine</h2>
 At this stage, I believe you've already downloaded and installed virtual box, if not, I have create a <a href="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Creating%20Windows%20Virtual%20machine.md">guide here</a> on how to go about it.
 Open VirtualBox and click on "New".
@@ -15,44 +18,32 @@ Name and Operating System: Name your VM (e.g., "Kali Linux") and select "Linux" 
 <img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Name%20your%20OS.png">
 
 Memory Size: Allocate at least 4096 MB, but 8192 MB (8 GB) or more is recommended for smoother performance.
+Processor: Allocate at least 4 CPUs if available.
 
 <img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Base%20mem%20and%20Proccessor.png">
 
-Processor: Allocate at least 2 CPUs if available.
+<h2>Create a Virtual Hard Disk</h2>
+Set the size to at least 20 GB for Kali Linux, but you can increase this if you have space.
 
-<img src="">
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Create%20HDD.png">
 
 <H2>Step 4: Configure VM Settings</H2>
 Select your VM and click "Settings":
-System > 
-Display > Video: Max out the Video Memory if possible.
 Storage: Click on the empty CD symbol under Controller: IDE, then choose "Choose a disk file..." and select the Kali Linux ISO you downloaded.
 
-<img src="">
+<img src="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Folder/Attach-an-ISO.jpg">
 
-Step 5: Install Kali Linux
-Start your VM. You should boot into the Kali Linux live environment.
-Select "Graphical install" or "Install" from the list of options.
+<h2>Step 5:Start the VM</h2>
+Click on "Start" to boot the VM. After booting, you'll be prompted to log in. The default username and password for Linux is "kali"
 
-Installation Process:
-Language, Location, Keyboard: Choose your preferences.
-Network: You can configure now or skip for later.
-Hostname: Name your machine (e.g., kali).
-Domain name: Usually left blank unless part of a domain.
-Root Password: Set a strong password.
-User Account: Create a non-root user with a password.
-Partitioning: Choose "Guided - use entire disk" for simplicity.
-Partition Disks: Write changes to disk.
-Mirror: Select your country for the software repository.
-Package Manager: Update and install GRUB boot loader.
-Device for boot loader installation: Usually, the default drive.
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Click%20on%20start.png">
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Start%20your%20Linux%20VM.png">
 
-Step 6: Finalize Installation
-After installation, reboot the VM when prompted. Ensure you remove the ISO from the virtual CD drive (eject in VirtualBox Storage settings) to boot from the HDD.
+<H2>Update Kali</H2>
+Open a terminal and run, "sudo apt update"
 
-Step 7: Post-Installation
-Login with your user or root credentials.
-Update Kali: Open a terminal and run:
-bash
-sudo apt update && sudo apt upgrade -y
-Install Guest Additions: This improves VM performance and usability. From VirtualBox menu, go to "Devices" > "Insert Guest Additions CD image", then run the script from the mounted drive in Kali.
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Open%20The%20terminal.png">
+
+ After updating, run "sudo apt upgrade -y" to upgrade your Linux
+
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Upgrade%20your%20VM.png">
