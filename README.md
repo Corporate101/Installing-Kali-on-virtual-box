@@ -16,14 +16,8 @@ Name and Operating System: Name your VM (e.g., "Kali Linux") and select "Linux" 
 
 Memory Size: Allocate at least 4096 MB, but 8192 MB (8 GB) or more is recommended for smoother performance.
 
-<img src="">
+<img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Base%20mem%20and%20Proccessor.png">
 
-Hard Disk: Choose "Create a virtual hard disk now".
-Hard Disk Settings:
-File Location and Size: Use VDI (VirtualBox Disk Image) for type. 
-Storage on Physical Hard Drive: Dynamically allocated is better for saving space, but fixed size gives better performance.
-File Location: Keep the default or choose another location for the VM's HDD file.
-Size: A minimum of 20 GB is recommended, but more space is better for storing tools and data.
 Processor: Allocate at least 2 CPUs if available.
 
 <img src="">
