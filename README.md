@@ -33,6 +33,8 @@ Storage: Click on the empty CD symbol under Controller: IDE, then choose "Choose
 
 <img src="https://github.com/Corporate101/Setting-up-a-Virtual-home-Lab/blob/main/Folder/Attach-an-ISO.jpg">
 
+<h2>Configure the Network</h2>
+Ensure that your network settings are configured appropriately. It's recommended to use Bridged Adapter network settings to 
 <h2>Step 5:Start the VM</h2>
 Click on "Start" to boot the VM. After booting, you'll be prompted to log in. The default username and password for Linux is "kali"
 
