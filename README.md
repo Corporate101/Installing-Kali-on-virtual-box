@@ -52,3 +52,9 @@ Open a terminal and run, "sudo apt update"
  After updating, run "sudo apt upgrade -y" to upgrade your Linux
 
 <img src="https://github.com/Corporate101/Installing-Kali-on-virtual-box/blob/main/Folders/Upgrade%20your%20VM.png">
+
+<h2>Additional Tips:</h2>
+<l1>Keep your VM software and Kali Linux updated for security purposes.</l1>
+Allocate resources to the VM based on your host machine's capabilities to ensure smooth performance.
+Familiarize yourself with the Kali Linux interface and tools for effective usage.
+That's it! You now have Kali Linux installed on your virtual machine.
